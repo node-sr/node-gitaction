@@ -11,6 +11,9 @@ app.get('/dashboard',(req,res)=>{
 app.get('/home',(req,res)=>{
     res.send("<h1>home</h1>")
 })
+app.get('/contact',(req,res)=>{
+    res.send("<h1>contact</h1>")
+})
 app.listen(port,()=>{
     console.log(`App running on ${port}`);
 })
