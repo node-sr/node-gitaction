@@ -24,11 +24,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Remove dependencies
-    - run: sudo rm -rf node_modules
+      run: sudo rm -rf node_modules
     - name: Install dependencies
-    - run: npm i
+      run: npm i
     - name: Restarting application
-    - run: |
+      run: |
         # curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
         # sudo apt-get install -y nodejs
         
